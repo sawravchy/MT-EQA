@@ -21,7 +21,7 @@ We present a generalization of EQA -- Multi-Target EQA (MT-EQA). Specifically, w
 
 ## Data Generation
 
-Go to `eqa_data` folder and do the followings:
+Go to [eqa_data](./eqa_data) folder and do the followings:
 
 1. How to generate question-answer pairs
 - Run `./scripts/run_question_generation.sh`, this would save qas to `cache/question-gen-outputs/questions_pruned_v2.json`.
@@ -43,7 +43,7 @@ Go to `eqa_data` folder and do the followings:
 
 ## Imitation Learning for Nav+Ctrl+cVQA
 
-Go to `nav_loc_vqa` folder and do the followings:
+Go to [nav_loc_vqa](./nav_loc_vqa) folder and do the followings:
 
 1. Prepare House Data (conn-maps, graphs, shortest-paths, images, features, etc)
 - Copy or Symlink `../eqa_data/cache/question-gen-outputs`, `../eqa_data/cache/shortest-paths-mt`, `../eqa_data/target-obj-bestview-pos` and `../eqa_data/target-obj-conn-maps` to `./data`
@@ -61,7 +61,7 @@ Go to `nav_loc_vqa` folder and do the followings:
 
 ## Reinforcement Learning Finetuning for Navigators
 
-Go to `eqa_nav` folder and do the followings:
+Go to [eqa_nav](./eqa_nav) folder and do the followings:
 
 1. Prepare House Data (conn-maps, graphs, shortest-paths, images, features, etc)
 - Copy or Symlink `../eqa_data/cache/question-gen-outputs`, `../eqa_data/cache/shortest-paths-mt`, `../eqa_data/target-obj-bestview-pos` and `../eqa_data/target-obj-conn-maps` to `./data`
